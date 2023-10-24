@@ -1,0 +1,49 @@
+ <div class="show-mobile">
+  <div class="show-mobile-container">
+    <button (click)="toggleMenu()">
+      <img src="../../../assets/svg/icon_menu.svg" alt="menu">
+    </button>
+    <a class="logo" href="">
+      <img src="../../assets/images/fantasma.png" alt="logo">
+      <p>ArtAnimeStore</p>
+    </a>
+  </div>
+  <div class="side-menu" [class.active]="activeMenu">
+    <button (click)="toggleMenu()">Close</button>
+    <ul>
+      <li>
+        <img src="../../../assets/images/buscar.png" alt=""><a href="">Explore</a>
+      </li>
+      <li>
+        <img src="../../../assets/images/ahorrar-agua.png" alt=""><a href="">Drops</a>
+      </li>
+      <li>
+        <img src="../../../assets/images/tendencia.png" alt=""><a href="">Trending</a>
+      </li>
+      <li>
+        <img src="../../../assets/images/articulo-popular.png" alt=""><a href=""></a>Popular
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="hide-mobile">
+  <div class="hide-mobile-container">
+    <nav>
+      <a class="logo" href="">
+        <img src="../../assets/images/fantasma.png" alt="logo">
+        <div>ArtAnimeStore</div>
+      </a>
+      <ul>
+        <li><a href="">Explore</a> </li>
+        <li><a href="">Drops</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href=""></a>Popular</li>
+      </ul>
+    </nav>
+    <div class="account">
+      <button class="logIn-btn">Log in</button>
+      <button class="signUp-btn">Sign up</button>
+    </div>
+  </div>
+</div>
