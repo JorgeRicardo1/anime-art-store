@@ -1,0 +1,194 @@
+.front-page{
+  display: flex;
+  justify-content: flex-start;
+  margin: 2em 5em;
+  flex-wrap: wrap-reverse;
+  padding: 2em 0 0 0;
+  .front-page-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 1;
+    //min-width: 495px;
+    .front-page-texts-title{
+      p{
+        font-weight: 500;
+        font-size: 60px;
+        figure{
+          display: inline-block;
+          position: relative;
+          height: 50px;
+          width: 100px;
+          img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+            box-shadow: 3px 4px 0 0px;
+          }
+        }
+      }
+    }
+    .front-page-texts-subtitle{
+      //max-width: 495px;
+      //min-width: 495px;
+      p{
+        color: #646464;
+      }
+    }
+    .front-page-texts-options{
+      display: flex;
+
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 1em;
+      .front-page-texts-options-search{
+        flex: 60%;
+        input{
+          width: 100%;
+          box-shadow: 3px 4px 0 0px;
+          display: inline-block;
+          height: 35px;
+          text-align: center;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder{
+            background-image: url(../../../assets/images/lupa.png);
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+            background-position: left center;
+          }
+        }
+      }
+      button{
+        flex: 30%;
+        box-shadow: 3px 4px 0 0px;
+        background: #E56C38;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .front-page-decoration{
+    display: flex;
+    flex: 2 0;
+    align-items: center;
+    position: relative;
+    .front-page-decoration-images{
+      display: flex;
+      justify-content: space-evenly;
+      min-width: 100%;
+      height: 100%;
+      img {
+        //position: absolute;
+        //height: 200px;
+        //width: 125px;
+        transform: skewY(11deg);
+        box-shadow: 10px -13px 1px 1px;
+        border-radius: 25px;
+        &.image1{
+          align-self: center;
+          height: 205px;
+          width: 140px;
+        }
+        &.image2{
+          align-self: flex-start;
+          height: 225px;
+          width: 175px;
+        }
+        &.image3{
+          align-self: flex-end;
+          height: 175px;
+          width: 140px;
+        }
+      }
+    }
+    .front-page-decoration-figure{
+      box-shadow: 8px -8px 1px 1px #646464;
+      border: 2px solid;
+      position: absolute;
+      width: 47%;
+      height: auto;
+      top: 100%;
+      left: 30%;
+      max-width: 450px;
+      transform: translate(-50%, 0%);
+      transform: skewY(8deg);
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      background-color: #1B0706;
+      padding: 5px 8px;
+      border-radius: 30px;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: contain;
+      }
+      .front-page-decoration-figure-text{
+        color: aliceblue;
+      }
+      .front-page-decoration-figure-minitext{
+        display: flex;
+        flex-direction: row;
+        color: aliceblue;
+        justify-content: space-between;
+        padding: 0 1em;
+      }
+    }
+  }
+}
+
+
+/* Medium only */
+@media screen and (min-width: 887px) and (max-width: 1244px) {
+  .front-page{
+    justify-content: center;
+    .front-page-decoration{
+      .front-page-decoration-images{
+        img{
+          &.image3{
+            margin: 0 0 5em 0;
+          }
+        }
+      }
+      .front-page-decoration-figure{
+        top: 87%;
+        left: 30%;
+        transform: translate(-50%, -100%);
+        transform: skewY(11deg);
+        width: 40%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 886px) {
+  .front-page{
+    display: flex;
+    justify-content: center;
+    .front-page-texts{
+      .front-page-texts-options{
+        .front-page-texts-options-search{
+          input{
+            &::placeholder{
+              background-image: none;
+            }
+          }
+        }
+      }
+    }
+    .front-page-decoration{
+      display: none;
+      .front-page-decoration-images{
+        display: none;
+      }
+    }
+  }
+}
