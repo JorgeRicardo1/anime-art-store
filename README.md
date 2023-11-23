@@ -1,6 +1,10 @@
 # AnimeArtStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+Esta pagina  es un proyecto de práctica desarrollado con Angular, diseñado para proporcionar una interfaz grafica agradable
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/w0mkZgm/art-Anime-Store0.png)
 
 ## Development server
 
