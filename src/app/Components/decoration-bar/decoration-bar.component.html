@@ -1,0 +1,12 @@
+<section class="decoration-bar">
+  <div class="decoration-bar-container">
+    <div class="decoration-bar-container-item" *ngFor="let item of intercalatedList">
+      <div class="decoration-bar-container-img" *ngIf="item === '*'">
+        <img src="../../../assets/images/estrella.png" alt="">
+      </div>
+      <div class="decoration-bar-container-text" *ngIf="item != '*'">
+        {{ item }}
+      </div>
+    </div>
+  </div>
+</section>
